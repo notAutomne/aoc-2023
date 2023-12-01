@@ -12,8 +12,8 @@ def generate_blank_files_lf(output_dir: str):
 
 def generate_python_src(output_dir: str):
     for i in range(2, 26):
-        Path(f"{output_dir}/day_{i:02d}/day_{i:02d}.py").touch()
-        with open(f"{output_dir}/day_{i:02d}/day_{i:02d}.py", "w", encoding="utf-8") as f:
+        Path(f"{output_dir}/day_{i:02d}.py").touch()
+        with open(f"{output_dir}/day_{i:02d}.py", "w", encoding="utf-8") as f:
             f.write(f"""\"""Day {i:02d} AoC 2023\"\"\"\n\n\n\
 count = 0
 
